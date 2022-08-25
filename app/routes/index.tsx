@@ -6,13 +6,6 @@ export function links() {
   return [{ rel: 'stylesheet', href: styles }];
 }
 
-function sleep(ms: number) {
-  return new Promise((res, rej) => window.setTimeout(res, ms));
-}
-
-const csvAPI =
-  'https://raw.githubusercontent.com/ph4un00b/data/main/1000movies.csv';
-
 export default function Index() {
   let isHydrated = useHydrated();
 
